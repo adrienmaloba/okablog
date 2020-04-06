@@ -1,3 +1,4 @@
+import 'package:akablog/signup.dart';
 import 'package:flutter/material.dart';
 
 import 'Animation/FadeAnimation.dart';
@@ -40,7 +41,7 @@ class _Login extends State<Login> {
         ),
         child: Column(
           children: <Widget>[
-            SizedBox(height: 100,),
+            SizedBox(height: 80,),
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 20.0),
               child: Column(
@@ -75,7 +76,7 @@ class _Login extends State<Login> {
                             decoration: BoxDecoration(
                               border: Border(
                                 bottom: BorderSide(
-                                  color: Colors.grey[100],
+                                  color: Colors.white,
                                 ),
                               ),
                             ),
@@ -147,12 +148,21 @@ class _Login extends State<Login> {
                   FadeAnimation(
                     1,
                     Center(
-                      child: Text(
-                        "Créer un compte",
-                        style: TextStyle(
-                          color: Colors.white,
+
+                      child: new GestureDetector(
+                        onTap: () {
+                          toSignUp();
+                        },
+                        child: Text(
+                          "Créer un compte",
+                          style: TextStyle(
+                            color: Colors.white,
+                            decoration: TextDecoration.underline,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       ),
+
                     ),
                   ),
                 ],
@@ -162,5 +172,14 @@ class _Login extends State<Login> {
         ),
       )
     );
+  }
+
+  // open signup interface
+  void toSignUp(){
+    Navigator.push(context, new MaterialPageRoute(
+        builder: (BuildContext context) {
+            return Signup();
+        },
+    ));
   }
 }
