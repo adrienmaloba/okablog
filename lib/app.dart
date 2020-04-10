@@ -1,6 +1,7 @@
 import 'package:akablog/Interfaces/myarticle.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:carousel_pro/carousel_pro.dart';
 
 import 'Interfaces/categories.dart';
 import 'Interfaces/dashboard.dart';
@@ -25,6 +26,8 @@ class _App extends State<App>{
   Widget currentScreen = Dashboard();
 
   var colorOrange = Colors.orange[900];
+
+
 
   @override
   Widget build(BuildContext context) {
