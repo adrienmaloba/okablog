@@ -1,6 +1,8 @@
 import 'package:akablog/login.dart';
 import 'package:flutter/material.dart';
 
+import 'app.dart';
+
 void main () {
   runApp(new Akablog());
 }
@@ -16,7 +18,7 @@ class Akablog extends StatelessWidget
         primarySwatch: Colors.blue
       ),
 
-      home: Login(),
+      home: App(),
 
     );
   }
