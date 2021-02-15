@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Article extends StatefulWidget {
+class NewArticle extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    return _Article();
+    return _NewArticle();
   }
 }
 
-class _Article extends State<Article> {
+class _NewArticle extends State<NewArticle> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

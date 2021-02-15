@@ -56,6 +56,12 @@ flutter:
     - img/slide4.jpg
     - img/slide5.jpg
 
+    - img/examples/element1.jpg
+    - img/examples/element2.jpg
+    - img/examples/element3.jpg
+    - img/examples/element4.jpg
+    - img/examples/element5.jpg
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

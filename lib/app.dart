@@ -71,7 +71,7 @@ class _App extends State<App>{
                           color: currentTab == 0 ? Colors.orange[900] : Colors.grey,
                         ),
                         Text(
-                          'Articles',
+                          'Explorez',
                           style: TextStyle(
                             color: currentTab == 0 ? Colors.orange[900] : Colors.grey,
                           ),
@@ -100,11 +100,11 @@ class _App extends State<App>{
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Icon(
-                          Icons.library_books,
+                          Icons.category,
                           color: currentTab == 3 ? Colors.orange[900] : Colors.grey,
                         ),
                         Text(
-                          'Mes articles',
+                          'Categories',
                           style: TextStyle(
                             color: currentTab == 3 ? Colors.orange[900] : Colors.grey,
                           ),
